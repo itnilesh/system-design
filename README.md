@@ -98,8 +98,8 @@ https://12factor.net/
  
  
  6. Metrics Collection and Autoscaling 
- - Instance/Container sizing 
- 
+ - Vertical Scaling - Instance/Container sizing 
+ - Horizontal Scaling - Create new instance based on say throughput/latency numbers.
  
  7. Logging and Distributed Request tracing  
  
