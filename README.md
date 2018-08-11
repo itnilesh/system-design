@@ -20,11 +20,17 @@ https://12factor.net/
   - creating architecture design docs
   - Understanding assumptions and underlaying limitations of requitements and system.
 
+ 
+2. Micro-services 
+  - Segregate independent functionality and wrap it inside micro-service.
+  - So identity key components which can become micro-services 
+  
 2. Client/User
  
   Identify what is client whether it browser/app/custom client etc.
   - HTTP based widely apis are quite generic which could be consumed by browse/app/client etc.
   - TCP/WebSocket/GRPC/RPC based protocol may use their own serialization/de-serilizaton method for sending and recieving messgae so common client like browsers might not able to handle it. It needs some app/client to use it.
+  
   
  3. API communication type
  
@@ -38,7 +44,7 @@ https://12factor.net/
   - HTTP/1.1 - This protocol supports one directional communication like request -response based stateless protocol.
   - HTTP/2.0 - refer https://http2.akamai.com/demo HTTP/2.0 can be configured to use websockets. GRPC needs HTTP/2.0 as it is built above it.
   
- 
+  
  #### HTTP Polling  
     Using HTTP based rest api have certain challenges in case of async/bi-directional/streaming communication.
     We have to choose following technique on client side based on need like whether it is real time/batch job/stream etc.
