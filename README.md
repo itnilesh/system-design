@@ -93,7 +93,7 @@ https://12factor.net/
  - Graph database like neo4j
  - Full text search engine like elastic search
  - NFS if you need large file storage 
- - Object store if you need to store binary data like in AWS S3 based store etc.
+ - Blob/Object store if you need to store binary data like in AWS S3 based store etc.
  - Local storage which comes with container/instance
  
  
